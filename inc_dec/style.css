@@ -9,48 +9,69 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    background-color: #212121;
-    color: #e3e3e3;
+    gap: 30px;
+
+    background: #1c1c1c;
+    color: #e8e6e3;
+
+    font-family: 'Quicksand', sans-serif;
 }
 
-button{
-    background-color: #454545;
-    color: #e3e3e3;
-    text-align: center;
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 2rem;
-    margin-right: 20px;
-    border: 2px solid #c5bdbda1;
-    cursor: pointer;
+
+.digit{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 16em;
+    margin-top: 12vh;
 }
+
 
 .digit-wrapper{
     position: relative;
-    display: inline-block;
 }
 
-.digit{
-    font-size: 18em;
-    text-align: center;
-    margin-top: 15vh;
+
+button{
+    background: transparent;
+    color: #e8e6e3;
+
+    padding: 12px 22px;
+    border-radius: 40px;
+
+    font-size: 1.8rem;
+    margin-right: 25px;
+    border: 2px solid #888;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+
+    font-family: 'Patrick Hand', cursive;
 }
 
-/* GIF beside digit */
+
+button:nth-child(1){ transform: rotate(-1deg); }
+button:nth-child(2){ transform: rotate(0.5deg); }
+button:nth-child(3){ transform: rotate(-0.5deg); }
+
+
+button:hover{
+    background: #2a2a2a;
+    border-color: #ccc;
+    transform: scale(1.08) rotate(0deg);
+}
+
+
 #specialGif{
     position: absolute;
     top: 50%;
     left: 100%;
-    margin-left: 20px;
+    margin-right: 20px;
 
-    width: 160px;
+    width: 180px;
 
     opacity: 0;
     transform: translateY(-50%) scale(0.5);
-    pointer-events: none;
 
-    transition: all 0.4s ease;
+    transition: 0.4s ease;
 }
 
 #specialGif.show{
