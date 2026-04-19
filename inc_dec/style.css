@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #212121;
+    color: #e3e3e3;
+}
+
+button{
+    background-color: #454545;
+    color: #e3e3e3;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 2rem;
+    margin-right: 20px;
+    border: 2px solid #c5bdbda1;
+    cursor: pointer;
+}
+
+.digit-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.digit{
+    font-size: 18em;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+/* GIF beside digit */
+#specialGif{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+
+    width: 160px;
+
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+    pointer-events: none;
+
+    transition: all 0.4s ease;
+}
+
+#specialGif.show{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
