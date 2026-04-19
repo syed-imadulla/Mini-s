@@ -15,7 +15,7 @@ body{
     font-family:'Quicksand',sans-serif;
 }
 
-/* MAIN WRAP */
+
 .container{
     display:flex;
     flex-direction:column;
@@ -23,7 +23,7 @@ body{
     gap:30px;
 }
 
-/* NUMBER BLOCK */
+
 .digit-wrapper{
     display:flex;
     flex-direction:column;

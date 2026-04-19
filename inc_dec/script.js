@@ -6,7 +6,7 @@ let gif = document.getElementById("specialGif");
 let sound = document.getElementById("bgSound");
 
 let played = false;
-
+sound.loop=true;
 
 function updateUI(){
     let num = parseInt(digit.textContent);
