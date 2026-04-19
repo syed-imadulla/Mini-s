@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Counter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter</title>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
+
     <div class="digit-wrapper">
         <div class="digit">0</div>
-        <img id="specialGif" src="./assets/bosnov-67.gif" alt="gif">
+        <img id="specialGif" src="./assets/bosnov-67.gif">
     </div>
 
     <div class="btn">
@@ -19,6 +22,10 @@
         <button id="increment">Increment</button>
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<audio id="bgSound" src="./assets/sound.mp3"></audio>
+
+<script src="script.js"></script>
 </body>
 </html>
